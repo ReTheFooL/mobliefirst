@@ -1,3 +1,4 @@
+import 'package:firstmoblie/backend/database.dart';
 import 'package:firstmoblie/config/constant.dart';
 import 'package:flutter/material.dart';
 
@@ -128,11 +129,12 @@ class _RegisterState extends State<Register> {
         print('Submit');
         if(formkey.currentState!.validate()){
         formkey.currentState!.save();
-        print("ชื่อ : $name");
-        print("นามสกุล : $surname");
-        print("อีเมล : $email");
-        print("รหัสผ่าน : $password");
+        var local = LocalDB();
+        local.Register(name,surname,email,password);
+        Navigator.pushNamed(context, 'login'); 
+        
         }
+
       },
     );
   }
