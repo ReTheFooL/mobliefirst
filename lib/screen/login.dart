@@ -74,7 +74,7 @@ class _LoginState extends State<Login> {
                     var local = LocalDB();
                     local.Login(email, password).then((value) {
                       if (value) {
-                        print('sucess');
+                        print('success');
                         Navigator.pushNamed(context, 'dashboard');
                       } else {
                         print('faill');
