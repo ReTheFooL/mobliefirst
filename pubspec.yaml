@@ -33,6 +33,12 @@ dependencies:
   path_provider: ^2.0.4
   path: ^1.8.0
   http: ^0.13.3
+  video_player: ^2.2.3
+  image_picker: ^0.8.4+1
+  better_player: ^0.0.73
+  location: ^4.3.0
+  geolocator: ^7.7.0
+  geocoding: ^2.0.1
 
 dev_dependencies:
   flutter_test:
@@ -54,6 +60,7 @@ flutter:
     - assets/images/
     - assets/fonts/
     - assets/icons/
+    - assets/video/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
